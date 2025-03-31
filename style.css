@@ -97,3 +97,7 @@ header {
     align-items: center; /* Center vertically */
 }
 
+.cal{
+    height: 30px;
+    margin-right: 10px;
+}
