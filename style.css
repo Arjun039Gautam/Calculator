@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    position: relative; /* Set relative positioning for absolute children */
+    height: 100vh;
+}
+
+h1 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+header {
+    background-color: bisque;
+    padding: 20px;
+    display: flex;
+}
+
+.calculator {
+    background-color: rgba(51, 48, 48, 0.8);
+    width: 300px;
+    height: 440px; /* Match container's height */
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+    margin: 20px auto;
+}
+
+#screen {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+}
+
+.buttons {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 335px;
+    width: 100%;
+}
+
+.btn {
+    background-color: rgba(20, 19, 19);
+    color: wheat;
+    width: 60px;
+    height: 45px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px;
+}
+
+.btn.operator {
+    background-color: rgb(93, 14, 14);
+    color: white;
+}
+
+.btn.clear {
+    background-color: bisque;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.clear:hover {
+    background-color: #ff2c2c;
+}
+
+.btn.operator:hover {
+    background-color: #ff6c00;
+}
+
+/* Watermark styling */
+.watermark {
+    position: fixed; /* Fix the watermark to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%) ; /* Offset to truly center the element */
+    font-size: 10rem; /* Adjust size of watermark */
+    color: rgb(199, 188, 188); /* Semi-transparent white color */
+    z-index: -1; /* Ensure it stays behind other content */
+    pointer-events: none; /* Disable interaction with watermark */
+    text-align: center; /* Center text */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
